@@ -21,6 +21,13 @@ export class AppController {
 
   @Get()
   test() {
-    return 'This is a test';
+    return 'This is a test really';
+  }
+
+  @Get('heroes')
+  heroes() {
+    return [
+      { id: 21, name: 'test1' }
+    ];
   }
 }
